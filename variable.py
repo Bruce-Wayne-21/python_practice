@@ -32,34 +32,57 @@
 
 
  ###################################################  ( string interpolation) #####################################################
-amount = 150.75
-print("Amount: ${:.2f}".format(amount))
-
-print("geeks for geeks : %2d portal : %5.2f" % (1, 4.5))
-print("hello %s" % "sajilan")
-
-print("hello %s %d" % ("sajilan", 10))
-
-print("my name is {0} and my age is {1}".format("sajilan", 10))
-print ("my dog name is {} and my name is {}".format("dog", "sajilan"))
-
-template="Number is {0},{1},and {saj}"
-print(template.format(1,2,saj=3))
+# amount = 150.75
+# print("Amount: ${:.2f}".format(amount))
+#
+# print("geeks for geeks : %2d portal : %5.2f" % (1, 4.5))
+# print("hello %s" % "sajilan")
+#
+# print("hello %s %d" % ("sajilan", 10))
+#
+# print("my name is {0} and my age is {1}".format("sajilan", 10))
+# print ("my dog name is {} and my name is {}".format("dog", "sajilan"))
+#
+# template="Number is {0},{1},and {saj}"
+# print(template.format(1,2,saj=3))
 
 
 ############################################# Formatting Output using String Methods ####################################
 
-cstr = "I love geeksforgeeks"
+# cstr = "I love geeksforgeeks"
+#
+# # Printing the center aligned string with fillchr
+# print("Center aligned: ")
+# print(cstr.center(40, '#'))
+#
+# # Printing the left aligned string with "-" padding
+# print("left aligned: ")
+# print(cstr.ljust(40, '-'))
+#
+# # Printing the right aligned string with "-" padding
+# print("right aligned: ")
+# print(cstr.rjust(40, '-'))
 
-# Printing the center aligned string with fillchr
-print("Center aligned: ")
-print(cstr.center(40, '#'))
+######################################### bitwise operators ######################################################
 
-# Printing the left aligned string with "-" padding
-print("left aligned: ")
-print(cstr.ljust(40, '-'))
+valone= 5
+valtwo= 3
+print(valone | valtwo) # bitwise and
 
-# Printing the right aligned string with "-" padding
-print("right aligned: ")
-print(cstr.rjust(40, '-'))
+# Bitwise NOT example
+val = 5
+result = ~val
+print(result)  # Output: -6
+
+###################################### precedence of operators ######################################################
+
+val =(3+4) * 3/2
+print(val)
+
+val= 3+5 *3/2
+print(val)
+
+num = 10
+val =num+ 5**2 +3 -1
+print(val)
 
