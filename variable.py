@@ -30,6 +30,36 @@
 #       type(e),
 #       type(f))
 
+
+ ###################################################  ( string interpolation) #####################################################
 amount = 150.75
 print("Amount: ${:.2f}".format(amount))
+
+print("geeks for geeks : %2d portal : %5.2f" % (1, 4.5))
+print("hello %s" % "sajilan")
+
+print("hello %s %d" % ("sajilan", 10))
+
+print("my name is {0} and my age is {1}".format("sajilan", 10))
+print ("my dog name is {} and my name is {}".format("dog", "sajilan"))
+
+template="Number is {0},{1},and {saj}"
+print(template.format(1,2,saj=3))
+
+
+############################################# Formatting Output using String Methods ####################################
+
+cstr = "I love geeksforgeeks"
+
+# Printing the center aligned string with fillchr
+print("Center aligned: ")
+print(cstr.center(40, '#'))
+
+# Printing the left aligned string with "-" padding
+print("left aligned: ")
+print(cstr.ljust(40, '-'))
+
+# Printing the right aligned string with "-" padding
+print("right aligned: ")
+print(cstr.rjust(40, '-'))
 
