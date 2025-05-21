@@ -31,7 +31,7 @@
 #       type(f))
 
 
- ###################################################  ( string interpolation) #####################################################
+#  ###################################################  ( string interpolation) #####################################################
 # amount = 150.75
 # print("Amount: ${:.2f}".format(amount))
 #
@@ -63,26 +63,45 @@
 # print("right aligned: ")
 # print(cstr.rjust(40, '-'))
 
-######################################### bitwise operators ######################################################
 
-valone= 5
-valtwo= 3
-print(valone | valtwo) # bitwise and
+###############################################  (Python build in function ) #####################################################
 
-# Bitwise NOT example
-val = 5
-result = ~val
-print(result)  # Output: -6
+# value = 10
+# formated=format(value, 'b')
+# print(formated)   #######	Binary format.
+# fprmat=format(value, 'd')
+# print(fprmat)   #######		Decimal format.
+# formated=format(value, 'e')
+# print(formated)   #######	Scientific format.
+# formated=format(value, 'f')
+# print(formated)   #######	Floating point format.`
+# formated=format(value, 'o')
+# print(formated)   #######	Octal format.
+# formated=format(value, 'x')
+# print(formated)   #######	Hexadecimal format.
+# formated=format(value, 'X')
+# print(formated)   #######	Uppercase Hexadecimal format.
+# formated=format(value, 'n')
+# print(formated)   #######	Number format.
+#
+# str_value = 2.00
+# formated = format(str_value,'2f')  # No format spec needed for a string
+# print(formated)#######	Character format.
 
-###################################### precedence of operators ######################################################
+varible=[1,2,3,4,5]
+for i in varible:
+    print(i)
 
-val =(3+4) * 3/2
-print(val)
+variable = [1, 2, 3, 4, 5]
+print(*variable)
 
-val= 3+5 *3/2
-print(val)
+names=["saijilan","saj","saji"]
+for i in names:
+    print(i)
 
-num = 10
-val =num+ 5**2 +3 -1
-print(val)
+print(*names)
+
+
+
+
 
