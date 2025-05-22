@@ -9,6 +9,7 @@
 #     print("You are major")
 # else:
 #     print("hi i am ssajilan ")
+from operator import truediv
 
 # x,y=input("Enter two values").split()
 # print("number of boys",x)
@@ -87,21 +88,67 @@
 # str_value = 2.00
 # formated = format(str_value,'2f')  # No format spec needed for a string
 # print(formated)#######	Character format.
+#
+# varible=[1,2,3,4,5]
+# for i in varible:
+#     print(i)
+#
+# variable = [1, 2, 3, 4, 5]
+# print(*variable)
+#
+# names=["saijilan","saj","saji"]
+# for i in names:
+#     print(i)
+#
+# print(*names)
 
-varible=[1,2,3,4,5]
-for i in varible:
-    print(i)
+############################################# ( loop ) #############
 
-variable = [1, 2, 3, 4, 5]
-print(*variable)
+numbers = [1, 2, 3, 4, 5]
+for i in numbers:
+    if i == 3:
+        variable = True
+    else:
+        variable = False
+    while variable:
+        saji = ["saji", "saijilan", "saj"]
+        for name in saji:
+            if name == "saji":
+                print("hello sajilan parameswaran ")
+                break
+        variable = False  # To prevent infinite loop
 
-names=["saijilan","saj","saji"]
-for i in names:
-    print(i)
 
-print(*names)
+groups = [["Jobs", "Gates"], ["Newton", "Euclid"], ["Einstein", "Feynman"]]
+
+for data in groups:
+    for i in data:
+        print(i)
+
+############################################ Pattern printing######################
+
+rows = 5  # Number of rows for the pattern
+for i in range(1, rows + 1):
+    print('*' * i)
+
+numbers = [0, 254, 2, -1, 3]
+
+for num in numbers:
+    if (num <0):
+        print("negative number")
+        break
+    print(num)
+
+# Nested loop with a placeholder for incomplete logic
+for i in range(3):
+  for j in range(3):
+    if i == j:
+      # Placeholder for future implementations
+      pass
+    else:
+      print(f"i: {i}, j:{j}")
 
 
-
+print("python","is","awswome",sep="-",end="!\n" )
 
 
