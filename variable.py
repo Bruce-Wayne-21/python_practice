@@ -149,6 +149,6 @@ for i in range(3):
       print(f"i: {i}, j:{j}")
 
 
-print("python","is","awswome",sep="-",end="!\n" )
+
 
 
