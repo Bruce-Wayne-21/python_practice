@@ -9,6 +9,7 @@
 #     print("You are major")
 # else:
 #     print("hi i am ssajilan ")
+from operator import truediv
 
 # x,y=input("Enter two values").split()
 # print("number of boys",x)
@@ -87,21 +88,106 @@
 # str_value = 2.00
 # formated = format(str_value,'2f')  # No format spec needed for a string
 # print(formated)#######	Character format.
+#
+# varible=[1,2,3,4,5]
+# for i in varible:
+#     print(i)
+#
+# variable = [1, 2, 3, 4, 5]
+# print(*variable)
+#
+# names=["saijilan","saj","saji"]
+# for i in names:
+#     print(i)
+#
+# print(*names)
 
-varible=[1,2,3,4,5]
-for i in varible:
+############################################# ( loop ) #############
+
+# numbers = [1, 2, 3, 4, 5]
+# for i in numbers:
+#     if i == 3:
+#         variable = True
+#     else:
+#         variable = False
+#     while variable:
+#         saji = ["saji", "saijilan", "saj"]
+#         for name in saji:
+#             if name == "saji":
+#                 print("hello sajilan parameswaran ")
+#                 break
+#         variable = False  # To prevent infinite loop
+#
+#
+# groups = [["Jobs", "Gates"], ["Newton", "Euclid"], ["Einstein", "Feynman"]]
+#
+# for data in groups:
+#     for i in data:
+#         print(i)
+#
+# ############################################ Pattern printing######################
+#
+# rows = 5  # Number of rows for the pattern
+# for i in range(1, rows + 1):
+#     print('*' * i)
+#
+# numbers = [0, 254, 2, -1, 3]
+#
+# for num in numbers:
+#     if (num <0):
+#         print("negative number")
+#         break
+#     print(num)
+#
+# # Nested loop with a placeholder for incomplete logic
+# for i in range(3):
+#   for j in range(3):
+#     if i == j:
+#       # Placeholder for future implementations
+#       pass
+#     else:
+#       print(f"i: {i}, j:{j}")
+
+
+########################### ternary operator ##########################
+
+# age = 18
+# message ="you are very smart" if age > 18 else "you are not smart"
+# print(message)
+
+# price = 100
+# if price >=100:
+#     pass
+# else:
+#     print("price is less than 50")
+
+# point = (0, 2)
+#
+# match point:
+#     case (0, y):
+#         print(f"Y axis at {y}")
+#     case (x, 0):
+#         print(f"X axis at {x}")
+#     case (x, y):
+#         print(f"Point at {x}, {y}")
+#
+#
+# command ="start"
+# match command:
+#     case "start":
+#         print("Starting the process")
+#     case "stop":
+#         print("Stopping the process")
+#     case _:
+#         print("Unknown command")
+
+
+########################## loop #############
+
+for i in range (3,10,1):
     print(i)
 
-variable = [1, 2, 3, 4, 5]
-print(*variable)
-
-names=["saijilan","saj","saji"]
-for i in names:
-    print(i)
-
-print(*names)
-
-
-
+names= ["sajilan", "saji", "saj"]
+[print(names)for names in names]
 
 
