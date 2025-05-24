@@ -104,51 +104,90 @@ from operator import truediv
 
 ############################################# ( loop ) #############
 
-numbers = [1, 2, 3, 4, 5]
-for i in numbers:
-    if i == 3:
-        variable = True
-    else:
-        variable = False
-    while variable:
-        saji = ["saji", "saijilan", "saj"]
-        for name in saji:
-            if name == "saji":
-                print("hello sajilan parameswaran ")
-                break
-        variable = False  # To prevent infinite loop
+# numbers = [1, 2, 3, 4, 5]
+# for i in numbers:
+#     if i == 3:
+#         variable = True
+#     else:
+#         variable = False
+#     while variable:
+#         saji = ["saji", "saijilan", "saj"]
+#         for name in saji:
+#             if name == "saji":
+#                 print("hello sajilan parameswaran ")
+#                 break
+#         variable = False  # To prevent infinite loop
+#
+#
+# groups = [["Jobs", "Gates"], ["Newton", "Euclid"], ["Einstein", "Feynman"]]
+#
+# for data in groups:
+#     for i in data:
+#         print(i)
+#
+# ############################################ Pattern printing######################
+#
+# rows = 5  # Number of rows for the pattern
+# for i in range(1, rows + 1):
+#     print('*' * i)
+#
+# numbers = [0, 254, 2, -1, 3]
+#
+# for num in numbers:
+#     if (num <0):
+#         print("negative number")
+#         break
+#     print(num)
+#
+# # Nested loop with a placeholder for incomplete logic
+# for i in range(3):
+#   for j in range(3):
+#     if i == j:
+#       # Placeholder for future implementations
+#       pass
+#     else:
+#       print(f"i: {i}, j:{j}")
 
 
-groups = [["Jobs", "Gates"], ["Newton", "Euclid"], ["Einstein", "Feynman"]]
+########################### ternary operator ##########################
 
-for data in groups:
-    for i in data:
-        print(i)
+# age = 18
+# message ="you are very smart" if age > 18 else "you are not smart"
+# print(message)
 
-############################################ Pattern printing######################
+# price = 100
+# if price >=100:
+#     pass
+# else:
+#     print("price is less than 50")
 
-rows = 5  # Number of rows for the pattern
-for i in range(1, rows + 1):
-    print('*' * i)
-
-numbers = [0, 254, 2, -1, 3]
-
-for num in numbers:
-    if (num <0):
-        print("negative number")
-        break
-    print(num)
-
-# Nested loop with a placeholder for incomplete logic
-for i in range(3):
-  for j in range(3):
-    if i == j:
-      # Placeholder for future implementations
-      pass
-    else:
-      print(f"i: {i}, j:{j}")
-
+# point = (0, 2)
+#
+# match point:
+#     case (0, y):
+#         print(f"Y axis at {y}")
+#     case (x, 0):
+#         print(f"X axis at {x}")
+#     case (x, y):
+#         print(f"Point at {x}, {y}")
+#
+#
+# command ="start"
+# match command:
+#     case "start":
+#         print("Starting the process")
+#     case "stop":
+#         print("Stopping the process")
+#     case _:
+#         print("Unknown command")
 
 
+########################## loop #############
+
+for i in range (3,10,1):
+    print(i)
+
+names= ["sajilan", "saji", "saj"]
+[print(names)for names in names]
 
 
