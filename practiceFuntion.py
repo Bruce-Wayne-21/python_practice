@@ -12,5 +12,5 @@ def age_category(my_age, friend_age):
     print("You:", categorize(my_age))
     print("Your friend:", categorize(friend_age))
 
-# Example usage:
+
 age_category(5, 16)
