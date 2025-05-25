@@ -191,3 +191,46 @@ names= ["sajilan", "saji", "saj"]
 [print(names)for names in names]
 
 
+def function(num):
+    for item in num:
+        if item %2 ==0:
+            return f"{item} is even"
+        elif item % 2 != 0:
+            return f"{item} is odd"
+        else:
+            return f" {num}not a number"
+var =function
+number=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(var(number))
+
+
+def function1(num):
+    if num % 2 == 0:
+        return f"{num} is even"
+    elif num % 2 != 0:
+        return f"{num} is odd"
+    else:
+        return "not a number"
+var =function1
+print(var(10))
+
+# What happens:
+# You call function(number), with number = [1, 2, 3, 4, 5, 6, 7, 8, 9].
+# The function iterates through the list. The first item is 1.
+# 1 % 2 == 0 → False
+# 1 % 2 != 0 → True
+# So it returns "1 is odd"
+# Because you use return, the function exits after returning for the first item.
+
+
+def function2(num):
+    if num % 2 == 0:
+        return f"{num} is even"
+    elif num % 2 != 0:
+        return f"{num} is odd"
+    else:
+        return "not a number"
+
+var =function2
+input=input("Enter a number: ")
+print(var(int(input)))
