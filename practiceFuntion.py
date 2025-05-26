@@ -35,6 +35,19 @@ def calculatenumber(num1,num2):
 calculatenumber(10,25)
 
 
+class solution:
+    def twosum(self,nums,target):
+        n=len(nums)
+        for i in range(n):
+            for j in range(i+1,n):
+                if nums [i] + nums [j]== target:
+                    return [i,j]
+parms=[2,7,11,15]
+para2=13
+resposne=solution().twosum(parms,para2)
+print(resposne)
+
+
 
 
 
