@@ -61,40 +61,42 @@
 #
 #
 #
-# class newfuntion:
-#     def twosum(self, number,target):
-#         if not isinstance(number,list) or not  isinstance(target,(int,float)):
-#             raise ValueError ("invalid data type")
+class newfuntion:
+    def twosum(self, number,target):
+        if not isinstance(number,list) or not  isinstance(target,(int,float)):
+            raise ValueError ("invalid data type")
+
+        lenthOfNumber=len(number)
+        for i in range (lenthOfNumber):
+            for j in range (i+1,lenthOfNumber):
+                if number[i]+number[j]==target:
+                    return [i,j]
+
+        raise ValueError("wrong")
+ara_1=[1,2,3,4,5,6]
+target=7
+try:
+  response2=newfuntion().twosum(ara_1,target)
+  print(response2)
+except Exception as e:
+    print(f"{e} ")
+
 #
-#         lenthOfNumber=len(number)
-#         for i in range (lenthOfNumber):
-#             for j in range (i+1,lenthOfNumber):
-#                 if number[i]+number[j]==target:
-#                     return [i,j]
+# a=10
+# b=40
 #
-#         raise ValueError("wrong")
-# ara_1=[1,2,3,4,5,6]
-# target=7
-# try:
-#   response2=newfuntion().twosum(ara_1,target)
-#   print(response2)
-# except Exception as e:
-#     print(f"{e} ")
+# print(a&b)
+# print(a|b)
+# print(a^b)
+# print(~a)
+#
+# a+=b
+# print(a)
+# a-=b
+# print(a)
+#
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+# while(n:=len(numbers))>2:
+#     print(numbers.pop())
 
 
-a=10
-b=40
-
-print(a&b)
-print(a|b)
-print(a^b)
-print(~a)
-
-a+=b
-print(a)
-a-=b
-print(a)
-
-numbers=[1,2,3,4,5,6,7,8,9,10]
-while(n:=len(numbers))>2:
-    print(numbers.pop())

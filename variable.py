@@ -1,3 +1,5 @@
+from practiceFuntion import newfuntion
+
 # age_input=input("enter your name")
 # age=int(input("Enter your age "))
 #
@@ -223,14 +225,18 @@ print(var(10))
 # Because you use return, the function exits after returning for the first item.
 
 
-def function2(num):
-    if num % 2 == 0:
-        return f"{num} is even"
-    elif num % 2 != 0:
-        return f"{num} is odd"
-    else:
-        return "not a number"
+# def function2(num):
+#     if num % 2 == 0:
+#         return f"{num} is even"
+#     elif num % 2 != 0:
+#         return f"{num} is odd"
+#     else:
+#         return "not a number"
+#
+# var =function2
+# input=input("Enter a number: ")
+# print(var(int(input)))
 
-var =function2
-input=input("Enter a number: ")
-print(var(int(input)))
+newrequest=[12,2,3,4,2,5,6,7,8,9,10]
+targe=3
+newfuntion().twosum(newrequest,targe)
