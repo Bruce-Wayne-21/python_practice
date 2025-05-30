@@ -186,23 +186,25 @@ from operator import truediv
 
 ########################## loop #############
 
-for i in range (3,10,1):
+for i in range(3, 10, 1):
     print(i)
 
-names= ["sajilan", "saji", "saj"]
-[print(names)for names in names]
+names = ["sajilan", "saji", "saj"]
+[print(names) for names in names]
 
 
 def function(num):
     for item in num:
-        if item %2 ==0:
+        if item % 2 == 0:
             return f"{item} is even"
         elif item % 2 != 0:
             return f"{item} is odd"
         else:
             return f" {num}not a number"
-var =function
-number=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+var = function
+number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(var(number))
 
 
@@ -213,7 +215,9 @@ def function1(num):
         return f"{num} is odd"
     else:
         return "not a number"
-var =function1
+
+
+var = function1
 print(var(10))
 
 # What happens:
@@ -237,6 +241,58 @@ print(var(10))
 # input=input("Enter a number: ")
 # print(var(int(input)))
 
-newrequest=[12,2,3,4,2,5,6,7,8,9,10]
-targe=3
-newfuntion().twosum(newrequest,targe)
+ara_1 = [1, 2, 3, 4, 5, 6]
+target = 7
+try:
+    response2 = newfuntion().twosum(ara_1, target)
+    print(response2)
+except Exception as e:
+    print(f"{e}")
+
+my_list = [1, 2, 3, 4, 5]
+var =all(my_list)
+print(var)  # True if all elements are truthy, otherwise False
+
+my_list1 = [1, 2, 3, 4, 0]
+var1 = all(my_list1)
+print(var1)  # False because 0 is falsy
+
+
+my_list2 = [1, 2, 3, 4, 5]
+def check_all_elements(lst):
+    return all(lst)
+result = check_all_elements(my_list2)
+print(result)  # True if all elements are truthy, otherwise False
+
+my_list3 = [1, 2, 3, 4, 0]
+def check_all_elements(lst):
+    return all(lst)
+result1 = check_all_elements(my_list3)
+print(result1)  # False because 0 is falsy
+
+my_list4 = [2,4,6,8,10]
+def check_all_elements(lst):
+    return all(x % 2 == 0 for x in lst)
+result2 = check_all_elements(my_list4)
+print(result2)  # True because all elements are even
+
+
+filled = ['john', 'john@email.com', 1234]
+print(all(filled))  # True
+
+condition1 = True
+condition2 = True
+print(all([condition1, condition2]))  # true
+
+numbers=[1, 2, 3, 4, 5]
+if any(num % 2 == 0 for num in numbers):
+      print("At least one element is truthy")  # This will print because all numbers are truthy
+else:
+        print("No elements are truthy")
+
+results = [True, True, False]
+if not all(results):
+    print("Some operations failed")
+if any(not r for r in results):
+    print("At least one operation failed")
+

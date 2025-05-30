@@ -59,27 +59,18 @@
 # except Exception as e:
 #     print(f"Error: {e}")
 #
-#
-#
 class newfuntion:
-    def twosum(self, number,target):
-        if not isinstance(number,list) or not  isinstance(target,(int,float)):
-            raise ValueError ("invalid data type")
+    def twosum(self, number, target):
+        if not isinstance(number, list) or not isinstance(target, (int, float)):
+            raise ValueError("invalid data type")
 
-        lenthOfNumber=len(number)
-        for i in range (lenthOfNumber):
-            for j in range (i+1,lenthOfNumber):
-                if number[i]+number[j]==target:
-                    return [i,j]
+        lenthOfNumber = len(number)
+        for i in range(lenthOfNumber):
+            for j in range(i + 1, lenthOfNumber):
+                if number[i] + number[j] == target:
+                    return [i, j]
 
         raise ValueError("wrong")
-ara_1=[1,2,3,4,5,6]
-target=7
-try:
-  response2=newfuntion().twosum(ara_1,target)
-  print(response2)
-except Exception as e:
-    print(f"{e} ")
 
 #
 # a=10
