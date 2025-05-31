@@ -301,3 +301,10 @@ numbers = [1, 2, 3, 4, 5, 11]
 if any(num > 10 for num in numbers):
     print("At least one number is greater than 10")
 # Using any() to check if any element in a list is a string
+
+
+strings = ["apple", "banana", "cherry"]
+if any(isinstance(s, str) for s in strings):
+    print("At least one element is a string")
+# Using any() to check if any element in a list is a number
+
