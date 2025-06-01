@@ -303,6 +303,7 @@ if any(num > 10 for num in numbers):
 # Using any() to check if any element in a list is a string
 
 
+
 x=10
 y=2
 numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -323,3 +324,4 @@ elif y>x and y==20:
             print(f"Hello {name}, keep up the good work!")
 else:
     print("No conditions met, please check your inputs.")
+
