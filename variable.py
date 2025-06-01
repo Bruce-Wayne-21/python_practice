@@ -301,3 +301,25 @@ numbers = [1, 2, 3, 4, 5, 11]
 if any(num > 10 for num in numbers):
     print("At least one number is greater than 10")
 # Using any() to check if any element in a list is a string
+
+
+x=10
+y=2
+numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9]
+names= ["sajilan", "saji", "saj"]
+
+if x > y and x==10:
+    length=len(numbers)
+    for i in range(length):
+        if numbers[i] % 2 ==0:
+            print(f"{numbers[i]} is even")
+        else:
+            print(f"{numbers[i]} is odd")
+elif y>x and y==20:
+    for name in names:
+        if name == "sajilan":
+            print(f"Hello {name}, you are a great person!")
+        else:
+            print(f"Hello {name}, keep up the good work!")
+else:
+    print("No conditions met, please check your inputs.")
