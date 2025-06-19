@@ -33,6 +33,7 @@
 #     var1=cal(num1)
 #     var2=cal(num2)
 #     print(var1,var2)
+from time import process_time
 
 
 # calculatenumber(10,25)
@@ -90,4 +91,28 @@ class newfuntion:
 # while(n:=len(numbers))>2:
 #     print(numbers.pop())
 
+# list=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# total = 0
+# for i in range (len(list)):
+#     total+=list[i]
+# print(total)
+
+# *args example
+def fun(*args):
+    return sum(args)
+
+print(fun(1, 2, 3, 4))
+print(fun(5, 10, 15))
+
+# **kwargs example
+def fun(**kwargs):
+    for k, val in kwargs.items():
+        print(k, val)
+
+fun(a=1, b=2, c=3)
+
+def fun (*args):
+    for i in args:
+        print(i)
+fun(1, 2, 3, 4, 5)
 

@@ -350,3 +350,4 @@ print("Filtered positive even numbers:",
 # casting to int, then convert items to string again
 print("Operation on each item using lambda and map()",
       list(map(lambda x: str(int(x) + 10), l)))
+
