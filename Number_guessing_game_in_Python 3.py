@@ -23,5 +23,21 @@ def number_guessing_game():
         except ValueError:
             print("Please enter a valid integer.")
 
+def categorize(age):
+    if age < 13:
+        return "Child"
+    elif 13 <= age < 20:
+        return "Teenager"
+    elif 20 <= age < 65:
+        return "Adult"
+    else:
+        return "Senior"
+
 if __name__ == "__main__":
-    number_guessing_game()
+    # Run the categorize demo
+    result = categorize(25)
+    print(f"Age 25 is categorized as: {result}")
+
+    # # Start the number guessing game
+    # number_guessing_game()
+
