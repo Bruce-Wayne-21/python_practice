@@ -1,0 +1,33 @@
+Index: Number_guessing_game_in_Python 3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import random\r\n\r\ndef number_guessing_game():\r\n    print(\"Welcome to the Number Guessing Game!\")\r\n    print(\"I'm thinking of a number between 1 and 100.\")\r\n\r\n    secret_number = random.randint(1, 100)\r\n    attempts = 0\r\n\r\n    while True:\r\n        try:\r\n            guess = int(input(\"Take a guess: \"))\r\n            attempts += 1\r\n            if guess < 1 or guess > 100:\r\n                print(\"Your guess must be between 1 and 100.\")\r\n            elif guess < secret_number:\r\n                print(\"Too low! Try again.\")\r\n            elif guess > secret_number:\r\n                print(\"Too high! Try again.\")\r\n            else:\r\n                print(f\"Congratulations! You guessed the number in {attempts} tries.\")\r\n                break\r\n        except ValueError:\r\n            print(\"Please enter a valid integer.\")\r\n\r\ndef categorize(age):\r\n    if age < 13:\r\n        return \"Child\"\r\n    elif 13 <= age < 20:\r\n        return \"Teenager\"\r\n    elif 20 <= age < 65:\r\n        return \"Adult\"\r\n    else:\r\n        return \"Senior\"\r\n\r\nif __name__ == \"__main__\":\r\n    # Run the categorize demo\r\n    result = categorize(25)\r\n    print(f\"Age 25 is categorized as: {result}\")\r\n\r\n    # # Start the number guessing game\r\n    # number_guessing_game()\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Number_guessing_game_in_Python 3.py b/Number_guessing_game_in_Python 3.py
+--- a/Number_guessing_game_in_Python 3.py	(revision b4c45891d6fd81f7b926956a5e8559bc8a113db8)
++++ b/Number_guessing_game_in_Python 3.py	(date 1750352987062)
+@@ -33,10 +33,20 @@
+     else:
+         return "Senior"
+ 
++def checkname (*name):
++    for name in name:
++        if name=="sajilan":
++            print("hi i am sajilan")
++        else:
++            print("hi i am not sajilan")
++        
++
+ if __name__ == "__main__":
+     # Run the categorize demo
+-    result = categorize(25)
+-    print(f"Age 25 is categorized as: {result}")
++    # result = categorize(25)
++    # print(f"Age 25 is categorized as: {result}")
++
++    checkname("sajilan", "john", "doe")
+ 
+     # # Start the number guessing game
+     # number_guessing_game()

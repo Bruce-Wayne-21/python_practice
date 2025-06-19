@@ -33,10 +33,20 @@ def categorize(age):
     else:
         return "Senior"
 
+def checkname (*name):
+    for name in name:
+        if name=="sajilan":
+            print("hi i am sajilan")
+        else:
+            print("hi i am not sajilan")
+        
+
 if __name__ == "__main__":
     # Run the categorize demo
-    result = categorize(25)
-    print(f"Age 25 is categorized as: {result}")
+    # result = categorize(25)
+    # print(f"Age 25 is categorized as: {result}")
+
+    checkname("sajilan", "john", "doe")
 
     # # Start the number guessing game
     # number_guessing_game()
