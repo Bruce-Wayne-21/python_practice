@@ -186,39 +186,39 @@ from operator import truediv
 
 ########################## loop #############
 
-# for i in range(3, 10, 1):
-#     print(i)
-#
-# names = ["sajilan", "saji", "saj"]
-# [print(names) for names in names]
-#
-#
-# def function(num):
-#     for item in num:
-#         if item % 2 == 0:
-#             return f"{item} is even"
-#         elif item % 2 != 0:
-#             return f"{item} is odd"
-#         else:
-#             return f" {num}not a number"
-#
-#
-# var = function
-# number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# print(var(number))
-#
-#
-# def function1(num):
-#     if num % 2 == 0:
-#         return f"{num} is even"
-#     elif num % 2 != 0:
-#         return f"{num} is odd"
-#     else:
-#         return "not a number"
-#
-#
-# var = function1
-# print(var(10))
+for i in range(3, 10, 1):
+    print(i)
+
+names = ["sajilan", "saji", "saj"]
+[print(names) for names in names]
+
+
+def function(num):
+    for item in num:
+        if item % 2 == 0:
+            return f"{item} is even"
+        elif item % 2 != 0:
+            return f"{item} is odd"
+        else:
+            return f" {num}not a number"
+
+
+var = function
+number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(var(number))
+
+
+def function1(num):
+    if num % 2 == 0:
+        return f"{num} is even"
+    elif num % 2 != 0:
+        return f"{num} is odd"
+    else:
+        return "not a number"
+
+
+var = function1
+print(var(10))
 
 # What happens:
 # You call function(number), with number = [1, 2, 3, 4, 5, 6, 7, 8, 9].
@@ -241,113 +241,88 @@ from operator import truediv
 # input=input("Enter a number: ")
 # print(var(int(input)))
 
-# ara_1 = [1, 2, 3, 4, 5, 6]
-# target = 7
-# try:
-#     response2 = newfuntion().twosum(ara_1, target)
-#     print(response2)
-# except Exception as e:
-#     print(f"{e}")
-#
-# my_list = [1, 2, 3, 4, 5]
-# var =all(my_list)
-# print(var)  # True if all elements are truthy, otherwise False
-#
-# my_list1 = [1, 2, 3, 4, 0]
-# var1 = all(my_list1)
-# print(var1)  # False because 0 is falsy
-#
-#
-# my_list2 = [1, 2, 3, 4, 5]
-# def check_all_elements(lst):
-#     return all(lst)
-# result = check_all_elements(my_list2)
-# print(result)  # True if all elements are truthy, otherwise False
-#
-# my_list3 = [1, 2, 3, 4, 0]
-# def check_all_elements(lst):
-#     return all(lst)
-# result1 = check_all_elements(my_list3)
-# print(result1)  # False because 0 is falsy
-#
-# my_list4 = [2,4,6,8,10]
-# def check_all_elements(lst):
-#     return all(x % 2 == 0 for x in lst)
-# result2 = check_all_elements(my_list4)
-# print(result2)  # True because all elements are even
-#
-#
-# filled = ['john', 'john@email.com', 1234]
-# print(all(filled))  # True
-#
-# condition1 = True
-# condition2 = True
-# print(all([condition1, condition2]))  # true
-#
-# numbers=[1, 2, 3, 4, 5]
-# if any(num % 2 == 0 for num in numbers):
-#       print("At least one element is truthy")  # This will print because all numbers are truthy
-# else:
-#         print("No elements are truthy")
-#
-# results = [True, True, False]
-# if not all(results):
-#     print("Some operations failed")
-# if any(not r for r in results):
-#     print("At least one operation failed")
-#
-# # Using any() to check if any element in a list is greater than 10
-# numbers = [1, 2, 3, 4, 5, 11]
-# if any(num > 10 for num in numbers):
-#     print("At least one number is greater than 10")
-# # Using any() to check if any element in a list is a string
-#
-#
-# x=10
-# y=2
-# numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# names= ["sajilan", "saji", "saj"]
-#
-# if x > y and x==10:
-#     length=len(numbers)
-#     for i in range(length):
-#         if numbers[i] % 2 ==0:
-#             print(f"{numbers[i]} is even")
-#         else:
-#             print(f"{numbers[i]} is odd")
-# elif y>x and y==20:
-#     for name in names:
-#         if name == "sajilan":
-#             print(f"Hello {name}, you are a great person!")
-#         else:
-#             print(f"Hello {name}, keep up the good work!")
-# else:
-#     print("No conditions met, please check your inputs.")
+ara_1 = [1, 2, 3, 4, 5, 6]
+target = 7
+try:
+    response2 = newfuntion().twosum(ara_1, target)
+    print(response2)
+except Exception as e:
+    print(f"{e}")
 
-calculate=lambda num :"even number" if  num % 2 == 0 else "odd number"
-print(calculate(10))
+my_list = [1, 2, 3, 4, 5]
+var =all(my_list)
+print(var)  # True if all elements are truthy, otherwise False
 
-string = 'GeeksforGeeks'
+my_list1 = [1, 2, 3, 4, 0]
+var1 = all(my_list1)
+print(var1)  # False because 0 is falsy
 
-# lambda returns a function object
-print(lambda string: string)
 
-lamda_function=lambda num:num **3
-print(lamda_function(30))
+my_list2 = [1, 2, 3, 4, 5]
+def check_all_elements(lst):
+    return all(lst)
+result = check_all_elements(my_list2)
+print(result)  # True if all elements are truthy, otherwise False
 
-l = ["1", "2", "9", "0", "-1", "-2"]
-# sort list[str] numerically using sorted()
-# and custom sorting key using lambda
-print("Sorted numerically:",
-      sorted(l, key=lambda x: int(x)))
+my_list3 = [1, 2, 3, 4, 0]
+def check_all_elements(lst):
+    return all(lst)
+result1 = check_all_elements(my_list3)
+print(result1)  # False because 0 is falsy
 
-# filter positive even numbers
-# using filter() and lambda function
-print("Filtered positive even numbers:",
-      list(filter(lambda x: not (int(x) % 2 == 0 and int(x) > 0), l)))
+my_list4 = [2,4,6,8,10]
+def check_all_elements(lst):
+    return all(x % 2 == 0 for x in lst)
+result2 = check_all_elements(my_list4)
+print(result2)  # True because all elements are even
 
-# added 10 to each item after type and
-# casting to int, then convert items to string again
-print("Operation on each item using lambda and map()",
-      list(map(lambda x: str(int(x) + 10), l)))
 
+filled = ['john', 'john@email.com', 1234]
+print(all(filled))  # True
+
+condition1 = True
+condition2 = True
+print(all([condition1, condition2]))  # true
+
+numbers=[1, 2, 3, 4, 5]
+if any(num % 2 == 0 for num in numbers):
+      print("At least one element is truthy")  # This will print because all numbers are truthy
+else:
+        print("No elements are truthy")
+
+results = [True, True, False]
+if not all(results):
+    print("Some operations failed")
+if any(not r for r in results):
+    print("At least one operation failed")
+
+# Using any() to check if any element in a list is greater than 10
+numbers = [1, 2, 3, 4, 5, 11]
+if any(num > 10 for num in numbers):
+    print("At least one number is greater than 10")
+# Using any() to check if any element in a list is a string
+
+
+
+x=10
+y=2
+numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9]
+names= ["sajilan", "saji", "saj"]
+
+if x > y and x==10:
+    length=len(numbers)
+    for i in range(length):
+        if numbers[i] % 2 ==0:
+            print(f"{numbers[i]} is even")
+        else:
+            print(f"{numbers[i]} is odd")
+elif y>x and y==20:
+    for name in names:
+        if name == "sajilan":
+            print(f"Hello {name}, you are a great person!")
+        else:
+            print(f"Hello {name}, keep up the good work!")
+else:
+    print("No conditions met, please check your inputs.")
+
+    
