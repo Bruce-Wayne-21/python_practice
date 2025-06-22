@@ -39,10 +39,21 @@ def checkname (*name):
             print("hi i am sajilan")
         else:
             print("hi i am not sajilan")
-        
 
-if __name__ == "__main__":
+
+class newcar:
+    def __init__(self, name, model):
+        self.name = 'newcar'
+        self.model = 'theriya'
+
+    def carinfo(self):
+        print(f"Car Name: {self.name}, Model: {self.model}")
+
+    def __str__(self):
+        return f"Car Name: {self.name}, Model: {self.model}"
+
     # Run the categorize demo
+if __name__ == "__main__":
     # result = categorize(25)
     # print(f"Age 25 is categorized as: {result}")
 
