@@ -53,10 +53,23 @@ class newcar:
         return f"Car Name: {self.name}, Model: {self.model}"
 
     # Run the categorize demo
+
+#assign function to a variable
+def categorize_age(age):
+    return categorize(age)
+
+print(categorize_age(25))  # Example usage of the categorize function  # Example usage of the categorize functio
+
+def greeting(function):
+    def wrapper(*args, **kwargs):
+        print("Hello, welcome to the function!")
+        return function(*args, **kwargs)
+    return wrapper
+
 if __name__ == "__main__":
     # result = categorize(25)
     # print(f"Age 25 is categorized as: {result}")
-
+    categorize_age(30)  # Example usage of the categorize function
     checkname("sajilan", "john", "doe")
 
     # # Start the number guessing game
