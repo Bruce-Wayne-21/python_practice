@@ -6,62 +6,64 @@ namespace leetcode_practice
     {
         static void Main(string[] args)
         {
+            //for (int i = 1; i <= 99; i += 2)
+            //{
+            //    if (i < 99)
+            //        Console.Write(i + ", ");
+            //    else
+            //        Console.Write(i);
+            
             var solution = new Solution();
+            var result = solution.LengthOfLongestSubstring("abcabcbb");
+            Console.WriteLine(result);
 
-            try
-            {
-                // Capture and display the result
-                double result = solution.FindMedianSortedArrays(new int[] { 1, 3 }, new int[] { 2 });
-                Console.WriteLine($"Median: {result}");
-                Console.WriteLine("Hello, World!");
-
-                // Keep console open to see output
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadKey();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                Console.ReadKey();
-            }
+            Console.WriteLine(); // For a new line at the end
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
 
         public class Solution
         {
-            public double FindMedianSortedArrays(int[] nums1, int[] nums2)
+            public int LengthOfLongestSubstring(string s)
             {
-                if (nums1.Length > nums2.Length) return FindMedianSortedArrays(nums2, nums1);
+                int n = s.Length;
+                int maxLen = 0;
 
-                int len1 = nums1.Length, len2 = nums2.Length;
-                int imin = 0, imax = len1, halfLen = (len1 + len2 + 1) / 2;
-
-                while (imin <= imax)
+                for (int i = 0; i < n; i++)
                 {
-                    int i = (imin + imax) / 2;
-                    int j = halfLen - i;
-
-                    int maxLeft1 = (i == 0) ? int.MinValue : nums1[i - 1];
-                    int minRight1 = (i == len1) ? int.MaxValue : nums1[i];
-                    int maxLeft2 = (j == 0) ? int.MinValue : nums2[j - 1];
-                    int minRight2 = (j == len2) ? int.MaxValue : nums2[j];
-
-                    if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1)
+                    var set = new HashSet<char>();
+                    for (int j = i; j < n; j++)
                     {
-                        return (len1 + len2) % 2 == 0
-                            ? (Math.Max(maxLeft1, maxLeft2) + Math.Min(minRight1, minRight2)) / 2.0
-                            : Math.Max(maxLeft1, maxLeft2);
-                    }
-                    else if (maxLeft1 > minRight2)
-                    {
-                        imax = i - 1;
-                    }
-                    else
-                    {
-                        imin = i + 1;
+                        if (set.Contains(s[j]))
+                            break;
+                        set.Add(s[j]);
+                        maxLen = Math.Max(maxLen, j - i + 1);
                     }
                 }
 
-                throw new ArgumentException("Input arrays are not sorted or have invalid lengths.");
+                return maxLen;
+            }
+
+            private int lenthofSubstr(string ss)
+            {
+                int length = ss.Length;
+                int maxlenght = 0;
+
+                for (int i = 0; i < length; i++)
+                {
+                    var hashset = new HashSet<char>();
+                    for (int j = i; j < length; j++)
+                    {
+                        if (hashset.Contains(ss[j]))
+                            break;
+                        hashset.Add(ss[j]);
+                        maxlenght = Math.Max(maxlenght, j - i + 1);
+                    }
+
+
+                }
+
+                return maxlenght;
             }
         }
     }
