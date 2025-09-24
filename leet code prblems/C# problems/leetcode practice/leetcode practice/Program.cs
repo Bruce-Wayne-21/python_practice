@@ -15,8 +15,9 @@ namespace leetcode_practice
             
             var solution = new Solution();
             var result = solution.LengthOfLongestSubstring("abcabcbb");
-            Console.WriteLine(result);
+            var result2 = solution.RomanToInt("MCMXCIV");
 
+            Console.WriteLine(result2);
             Console.WriteLine(); // For a new line at the end
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
@@ -24,6 +25,8 @@ namespace leetcode_practice
 
         public class Solution
         {
+            private char nextChar;
+
             public int LengthOfLongestSubstring(string s)
             {
                 int n = s.Length;
@@ -42,6 +45,55 @@ namespace leetcode_practice
                 }
 
                 return maxLen;
+            }
+
+            private static int CalcScale(char nextChar, char higher, char mid)
+            {
+                return (nextChar == higher || nextChar == mid) ? -1 : 1;
+            }
+
+            public int RomanToInt(string s)
+            {
+                try
+                {
+                    int result = 0;
+
+                    for (int n = 0; n < s.Length; n++)
+                    {
+                       char nextChar = (n + 1 < s.Length) ? s[n + 1] : '\0';
+
+                        switch (s[n])
+                        {
+                            case 'M':
+                                result += 1000;
+                                break;
+                            case 'D':
+                                result += 500;
+                                break;
+                            case 'C':
+                                result += 100 * CalcScale(nextChar, 'M', 'D');
+                                break;
+                            case 'L':
+                                result += 50;
+                                break;
+                            case 'X':
+                                result += 10 * CalcScale(nextChar, 'C', 'L');
+                                break;
+                            case 'V':
+                                result += 5;
+                                break;
+                            case 'I':
+                                result += 1 * CalcScale(nextChar, 'X', 'V');
+                                break;
+                        }
+                    }
+
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred while converting Roman numeral to an integer.", ex);
+                }
             }
 
             private int lenthofSubstr(string ss)
@@ -64,6 +116,11 @@ namespace leetcode_practice
                 }
 
                 return maxlenght;
+            }
+
+            public class saji
+            {
+                
             }
         }
     }
