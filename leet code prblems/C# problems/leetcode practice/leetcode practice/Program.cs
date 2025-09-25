@@ -16,6 +16,7 @@ namespace leetcode_practice
             var solution = new Solution();
             var result = solution.LengthOfLongestSubstring("abcabcbb");
             var result2 = solution.RomanToInt("MCMXCIV");
+            Program.Solution.oddnumber();
 
             Console.WriteLine(result2);
             Console.WriteLine(); // For a new line at the end
@@ -118,10 +119,36 @@ namespace leetcode_practice
                 return maxlenght;
             }
 
-            public class saji
+           public string  longcommanPrefix(string[] strs)
+           {
+                string prefix = strs[0];
+                for (int i = 1; i < strs.Length; i++)
+                {
+
+                }
+                return prefix;
+           }
+
+            public static void oddnumber()
             {
-                
+                int n = 99; 
+                for (int i=0; i<n; i++)
+                {
+                    if(i % 2 != 0)
+                    {
+                         if (i < 99)
+                            Console.Write("Odd number"+  i + ", ");
+                        else
+                            Console.Write(i);
+                    }
+                    else if( i % 2 == 0)
+                    {
+                        Console.WriteLine("Even number" + i);
+                    }
+                }
             }
+
+
         }
     }
 }
